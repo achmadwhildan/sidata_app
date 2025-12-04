@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sidata_app/login.dart';
 
 class Explore extends StatefulWidget {
   const Explore({super.key});
@@ -28,7 +29,11 @@ class _ExploreState extends State<Explore> with TickerProviderStateMixin {
           Padding(
             padding: EdgeInsets.only(right: 20),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Login()),
+                );
+              },
               style: TextButton.styleFrom(
                 backgroundColor: Color(0xFF003B8E),
                 padding: EdgeInsets.all(15),

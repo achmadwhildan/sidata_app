@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:sidata_app/detail_catatan_sikap.dart';
+import 'package:sidata_app/widgets/appbar.dart';
 
 class CatatanSikap extends StatefulWidget {
   const CatatanSikap({super.key});
@@ -14,54 +15,8 @@ class _CatatanSikapState extends State<CatatanSikap> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        surfaceTintColor: Colors.transparent,
-        titleSpacing: 0,
-        title: Row(
-          children: [
-            Padding(
-              padding: EdgeInsets.only(left: 20),
-              child: FaIcon(
-                FontAwesomeIcons.house,
-                color: Colors.black87,
-                size: 20,
-              ),
-            ),
-            Spacer(),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                SizedBox(height: 8),
-                Text(
-                  "Pinkhan Mauldia Balqis",
-                  style: GoogleFonts.poppins(
-                    color: Colors.black87,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 14.5,
-                  ),
-                ),
-                Text(
-                  "PPLG XII-5",
-                  style: GoogleFonts.poppins(
-                    color: Colors.grey[600],
-                    fontWeight: FontWeight.w500,
-                    fontSize: 13,
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(width: 15),
-            CircleAvatar(
-              radius: 20,
-              backgroundImage: AssetImage("assets/images/profil.jpg"),
-            ),
-            SizedBox(width: 20),
-          ],
-        ),
-      ),
-      body: SingleChildScrollView(
+      appBar: AppbarPage(),
+            body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

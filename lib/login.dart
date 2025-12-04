@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sidata_app/explore.dart';
+import 'package:sidata_app/dashboard.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -86,7 +86,7 @@ class Login extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Explore()),
+                          MaterialPageRoute(builder: (context) => Dashboard()),
                         );
                       },
                       child: Container(
