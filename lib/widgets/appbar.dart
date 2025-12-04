@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:sidata_app/catatan_sikap.dart';
+import 'package:sidata_app/dashboard.dart';
+import 'package:sidata_app/explore.dart';
 import 'package:sidata_app/panduan.dart';
 import 'package:sidata_app/permintaanSaksi.dart';
+import 'package:sidata_app/profile_page.dart';
+import 'package:sidata_app/progress_belajar.dart';
 
 class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
   const AppbarPage({super.key});
@@ -43,11 +48,27 @@ class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
             ),
             onSelected: (value) {
               if (value == "Dashboard") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Dashboard()),
+                );
               } else if (value == "Profil") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
               } else if (value == "Jelajahi") {
               } else if (value == "Jurnal Pembiasaan") {
               } else if (value == "Catatan Sikap") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CatatanSikap()),
+                );
               } else if (value == "Progress") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProgressBelajar()),
+                );
               } else if (value == "Permintaan Saksi") {
                 Navigator.push(
                   context,
@@ -57,6 +78,11 @@ class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Panduan()),
+                );
+              } else if (value == "Pengaturan Akun") {
+              } else if (value == "Log Out") {
+                Navigator.push(context, 
+                  MaterialPageRoute(builder: (context) => Explore()),
                 );
               }
             },
