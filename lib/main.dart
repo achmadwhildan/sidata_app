@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sidata_app/explore.dart';
+// import 'package:sidata_app/explore.dart';
+import 'package:sidata_app/permintaanSaksi.dart';
+// import 'package:sidata_app/panduan.dart';
+// import 'package:sidata_app/permintaanSaksi.dart';
+// import 'package:sidata_app/progress.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Si Data',
+      title: 'Jurnalku',
       debugShowCheckedModeBanner: false,
-      home: Explore(),
+      home: Permintaansaksi(),
     );
   }
 }
