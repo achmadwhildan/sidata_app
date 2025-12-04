@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-// import 'package:sidata_app/explore.dart';
-import 'package:sidata_app/permintaanSaksi.dart';
-// import 'package:sidata_app/panduan.dart';
-// import 'package:sidata_app/permintaanSaksi.dart';
-// import 'package:sidata_app/progress.dart';
+import 'package:sidata_app/catatan_sikap.dart';
+import 'package:sidata_app/dashboard.dart';
+import 'package:sidata_app/explore.dart';
+import 'package:sidata_app/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Jurnalku',
       debugShowCheckedModeBanner: false,
-      home: Permintaansaksi(),
+      home: Dashboard(),
     );
   }
 }
