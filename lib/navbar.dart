@@ -22,7 +22,7 @@ class HeaderProfile extends StatelessWidget {
         ],
       ),
       child: SafeArea(
-        bottom: false, 
+        bottom: false,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
           child: Row(
