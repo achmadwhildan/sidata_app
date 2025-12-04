@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sidata_app/explore.dart';
+// import 'package:sidata_app/explore.dart';
+import 'package:sidata_app/permintaanSaksi.dart';
 // import 'package:sidata_app/panduan.dart';
 // import 'package:sidata_app/permintaanSaksi.dart';
 // import 'package:sidata_app/progress.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Jurnalku',
       debugShowCheckedModeBanner: false,
-      home: Explore(),
+      home: Permintaansaksi(),
     );
   }
 }

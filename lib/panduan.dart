@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:sidata_app/gantiPassword.dart';
+import 'package:sidata_app/unggahProfile.dart';
 import 'package:sidata_app/widgets/appbar.dart';
 
 
@@ -91,23 +93,31 @@ class Panduan extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Unggah Profile",
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Unggahprofile()),
+                      );
+                    },
+                    child: Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Unggah Profile",
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          "Panduan untuk mengunggah profile pengguna",
-                          style: TextStyle(fontSize: 14, color: Colors.black54),
-                        ),
-                      ],
+                          SizedBox(height: 4),
+                          Text(
+                            "Panduan untuk mengunggah profile pengguna",
+                            style: TextStyle(fontSize: 14, color: Colors.black54),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -145,23 +155,31 @@ class Panduan extends StatelessWidget {
                     ),
                   ),
                   SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Ganti Password",
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => GantiPassword()),
+                      );
+                    },
+                    child: Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Ganti Password",
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          "Panduan untuk mengganti password pengguna",
-                          style: TextStyle(fontSize: 14, color: Colors.black54),
-                        ),
-                      ],
+                          SizedBox(height: 4),
+                          Text(
+                            "Panduan untuk mengganti password pengguna",
+                            style: TextStyle(fontSize: 14, color: Colors.black54),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],

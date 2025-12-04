@@ -46,9 +46,9 @@ class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
               } else if (value == "Profil") {
               } else if (value == "Jelajahi") {
               } else if (value == "Jurnal Pembiasaan") {
-              } else if (value == "Permintaan Saksi") {
-              } else if (value == "Progress") {
               } else if (value == "Catatan Sikap") {
+              } else if (value == "Progress") {
+              } else if (value == "Permintaan Saksi") {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Permintaansaksi()),
