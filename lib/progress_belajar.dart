@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sidata_app/DetailProjectPage.dart';
 import 'package:sidata_app/card_progress.dart'; 
-import 'package:sidata_app/navbar.dart';      
+// import 'package:sidata_app/navbar.dart';
+import 'package:sidata_app/widgets/appbar.dart';      
 
 class ProgressBelajar extends StatelessWidget {
   const ProgressBelajar({super.key});
@@ -61,13 +62,14 @@ class ProgressBelajar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppbarPage(),
       body: Column(
         children: [
-          const HeaderProfile(
-            nama: "Rafid Dwi Prakoso",
-            kelas: "PPLG XII-5",
-            imagePath: "assets/images/gwehj.jpg",
-          ),
+          // const HeaderProfile(
+          //   nama: "Rafid Dwi Prakoso",
+          //   kelas: "PPLG XII-5",
+          //   imagePath: "assets/images/gwehj.jpg",
+          // ),
 
           Expanded(
             child: SingleChildScrollView(

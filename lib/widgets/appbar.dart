@@ -4,6 +4,8 @@ import 'package:sidata_app/dashboard.dart';
 import 'package:sidata_app/explore.dart';
 import 'package:sidata_app/panduan.dart';
 import 'package:sidata_app/permintaanSaksi.dart';
+import 'package:sidata_app/profile_page.dart';
+import 'package:sidata_app/progress_belajar.dart';
 
 class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
   const AppbarPage({super.key});
@@ -51,6 +53,10 @@ class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
                   MaterialPageRoute(builder: (context) => Dashboard()),
                 );
               } else if (value == "Profil") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
               } else if (value == "Jelajahi") {
               } else if (value == "Jurnal Pembiasaan") {
               } else if (value == "Catatan Sikap") {
@@ -59,6 +65,10 @@ class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
                   MaterialPageRoute(builder: (context) => CatatanSikap()),
                 );
               } else if (value == "Progress") {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProgressBelajar()),
+                );
               } else if (value == "Permintaan Saksi") {
                 Navigator.push(
                   context,
