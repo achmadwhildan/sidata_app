@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
     Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Si Data',
+      title: 'Jurnalku',
       debugShowCheckedModeBanner: false,
       home: ProfilePage(),
     );
