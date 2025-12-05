@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sidata_app/catatan_sikap.dart';
 import 'package:sidata_app/dashboard.dart';
 import 'package:sidata_app/explore.dart';
+import 'package:sidata_app/exploreDashboard.dart';
 import 'package:sidata_app/panduan.dart';
 import 'package:sidata_app/permintaanSaksi.dart';
 import 'package:sidata_app/profile_page.dart';
@@ -20,7 +21,15 @@ class AppbarPage extends StatelessWidget implements PreferredSizeWidget {
       shadowColor: Colors.black.withOpacity(0.20),
       title: Row(
         children: [
-          Icon(Icons.home_outlined, color: Colors.grey),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Exploredashboard()),
+              );
+            },
+            child: Icon(Icons.home_outlined, color: Colors.grey)
+            ),
           Spacer(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
